@@ -2,6 +2,8 @@
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
 import { CoffeeRunCdkStack } from '../lib/coffee-run-cdk-stack';
+import { S3StorageStack } from '../lib/s3-storage-stack';
+import * as config from '../config.json';
 
 const app = new cdk.App();
 new CoffeeRunCdkStack(app, 'CoffeeRunCdkStack', {
@@ -18,4 +20,10 @@ new CoffeeRunCdkStack(app, 'CoffeeRunCdkStack', {
   // env: { account: '123456789012', region: 'us-east-1' },
 
   /* For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html */
+  env: { region: 'us-east-1' }
+});
+
+const storage = new S3StorageStack(app, `${config.stage}`, {
+  stage: config.stage,
+  env: { region: 'us-east-1' }
 });
