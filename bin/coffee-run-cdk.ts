@@ -4,6 +4,7 @@ import * as cdk from 'aws-cdk-lib';
 import { CoffeeRunCdkStack } from '../lib/coffee-run-cdk-stack';
 import { S3StorageStack } from '../lib/s3-storage-stack';
 import * as config from '../config.json';
+import { AppRunnerStack } from '../lib/app-runner-stack';
 
 const app = new cdk.App();
 new CoffeeRunCdkStack(app, 'CoffeeRunCdkStack', {
@@ -23,7 +24,12 @@ new CoffeeRunCdkStack(app, 'CoffeeRunCdkStack', {
   env: { region: 'us-east-1' }
 });
 
-const storage = new S3StorageStack(app, `${config.stage}`, {
+const storage = new S3StorageStack(app, 'CoffeeRunStorageStack', {
   stage: config.stage,
   env: { region: 'us-east-1' }
 });
+
+const appRunner = new AppRunnerStack(app, 'CoffeeRunAppRunnerStack', {
+  stage: config.stage,
+  env: { region: 'us-east-1' }
+})

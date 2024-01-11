@@ -1,14 +1,12 @@
-# Welcome to your CDK TypeScript project
+# COFFEE RUN
+## Coffee Run IaC using AWS CDK
 
-This is a blank project for CDK development with TypeScript.
+## Architecture
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+# Getting Started with the Coffee Run React web app
 
-## Useful commands
+![Alt text](/docs/reference-architecture.jpg?raw=true "Coffee Run Referernce Architecture")
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+## Learn More
+
+You can learn more in the [Embarking on the AWS App Runner Journey](https://facebook.github.io/create-react-app/docs/getting-started) article on Medium.

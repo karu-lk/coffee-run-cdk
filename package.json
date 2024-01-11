@@ -1,6 +1,7 @@
 {
   "name": "coffee-run-cdk",
   "version": "0.1.0",
+  "author": "Lilupa Karu",
   "bin": {
     "coffee-run-cdk": "bin/coffee-run-cdk.js"
   },
