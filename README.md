@@ -16,6 +16,6 @@ You can learn more in the [Embarking on the AWS App Runner Journey](https://med
 
 | Application      | Repository                                         |
 | -------------    | -------------                                      |
-| Coffee Run API   | [here](https://github.com/karu-lk/coffee-run-cdk)   |
+| Coffee Run API   | [here](https://github.com/karu-lk/coffee-run-api)  |
 | IaC CDK Project  | this repo                                          |
 | React Web App    | [here](https://github.com/karu-lk/coffee-run-web)  |
